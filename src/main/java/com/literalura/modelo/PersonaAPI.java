@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonAlias;
 
 /**
  *
- * @author Rafael Barragán Acevedo
+ * @author Rafael Barragán Acevedos
  */
 public record PersonaAPI(
         

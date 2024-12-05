@@ -10,7 +10,7 @@ import org.springframework.data.jpa.repository.Query;
  * @author Rafael Barragán Acevedo
  */
 public interface RepoLibro extends JpaRepository<Libro, Integer>{
-    @Query("SELECT l FROM Libro l WHERE l.titulo ILIKE :titulo")
+    @Query("SELECT l FROM Libro l WHERE l.titulo ILIKE %:titulo%")
     public Optional<Libro> buscarPorTitulo(String titulo);
 
 }
